@@ -1,0 +1,190 @@
+/* General styles */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.main--div {
+  padding: 1rem;
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+  min-height: 100vh;
+}
+
+body {
+  background-color: #333333;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  color: white;
+  padding-bottom: 1rem;
+}
+
+/* Class styles */
+
+.completed {
+  text-decoration: line-through;
+  color: grey !important;
+}
+
+.uncompleted {
+  color: black;
+}
+
+.todo--div {
+  width: 100%;
+  background-color: #444444;
+}
+
+.todo--div li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+  padding: 1rem;
+}
+.todo--div li p:last-child {
+  color: white;
+  opacity: 1;
+}
+.todo--div ul {
+  max-width: 70%;
+  margin: 0 auto;
+}
+
+.input--div input,
+.input--div select {
+  padding: 0.2rem;
+  font-size: 1.3rem;
+  color: black;
+}
+
+.todo--input {
+  width: 70%;
+}
+
+.input--div-wrapper {
+  padding: 1rem;
+  margin-bottom: 20px;
+  display: flex;
+  background-color: #444444;
+}
+
+.input--div {
+  display: flex;
+  width: 70%;
+  align-items: center;
+}
+
+.add-todo-button {
+  width: 50%;
+}
+
+form {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+form input,
+form select {
+  border-radius: 7px;
+  outline: none;
+  border-color: rgb(255, 153, 0);
+  border-style: solid;
+}
+
+.button-div {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+}
+
+.button-div button {
+  background-color: rgb(255, 153, 0);
+  border-radius: 20px;
+  color: white;
+  outline: none;
+  border: none;
+}
+
+.todo-name {
+  color: rgb(255, 153, 0);
+  font-size: 1.5rem;
+}
+
+.todo-button-div {
+  display: flex;
+  width: 40%;
+  justify-content: space-evenly;
+  height: 100%;
+}
+
+.todo-text {
+  width: 60%;
+  word-wrap: break-word;
+}
+
+.complete-button {
+  background-color: white;
+  padding: 0.5rem;
+  border: 1px solid rgb(100, 197, 160);
+  border-radius: 15px;
+}
+
+.delete-button {
+  background-color: white;
+  padding: 0.5rem;
+  border: 1px solid red;
+  border-radius: 15px;
+}
+
+.button-div select {
+  border-radius: 20px;
+  text-align: center;
+  padding: 0.5rem;
+}
+
+@media only screen and (max-width: 992px) {
+  .main--div {
+    width: 100%;
+  }
+
+  .input--div-wrapper {
+    gap: 1rem;
+    flex-direction: column;
+  }
+
+  .input--div {
+    width: 100%;
+  }
+  form {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .todo--input {
+    width: 100%;
+  }
+
+  select {
+    text-align: center;
+  }
+
+  .add-todo-button {
+    padding: 0.5rem;
+    width: 50%;
+  }
+  .button-div select {
+    width: 50%;
+  }
+  .button-div {
+    width: 100%;
+  }
+  .todo--div ul {
+    max-width: 100%;
+  }
+}
